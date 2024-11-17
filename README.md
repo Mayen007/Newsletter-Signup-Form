@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/Mayen007/newsletter-signup-form) - GitHub Repository
-- [Live Site URL](https://your-live-site-url.com) - Live Preview
+- [Live Site URL](https://mayen007.github.io/Newsletter-Signup-Form/) - Live Preview
 
 ## My Process
 
