@@ -1,118 +1,95 @@
-# Frontend Mentor - Newsletter sign-up form with success message solution
+# Frontend Mentor - Newsletter Sign-up Form with Success Message Solution
 
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). This challenge focuses on building a responsive sign-up form with validation and a success message modal.
 
-## Table of contents
+## Table of Contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The Challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [Features](#features)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-### The challenge
+### The Challenge
 
 Users should be able to:
 
-- Add their email and submit the form
-- See a success message with their email after successfully submitting the form
-- See form validation messages if:
-  - The field is left empty
-  - The email address is not formatted correctly
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- Enter their email and submit the form.
+- See a success message displaying their email after a successful form submission.
+- View form validation messages if:
+  - The input field is empty.
+  - The email address is not formatted correctly.
+- Experience a responsive layout that adapts to different screen sizes (desktop and mobile).
+- See hover and focus states for all interactive elements.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Desktop View](./assets/images/desktop-view.png)
+![Mobile View](./assets/images/mobile-view.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/Mayen007/newsletter-signup-form) - GitHub Repository
+- [Live Site URL](https://your-live-site-url.com) - Live Preview
 
-## My process
+## My Process
 
-### Built with
+### Built With
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- **Semantic HTML5** for structured content
+- **CSS Custom Properties** for consistent theming
+- **Flexbox** for layout and alignment
+- **CSS Media Queries** for responsive design
+- **JavaScript (Vanilla)** for form validation and modal functionality
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### Features
 
-### What I learned
+- **Form Validation**: Checks for valid email format using a regular expression.
+- **Responsive Design**: Adapts layout for mobile and desktop using media queries.
+- **Success Message Modal**: Displays a confirmation message with the user's email after successful form submission.
+- **Error Feedback**: Shows a visual error message if the email input is invalid, highlighting the input field in red.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+### What I Learned
 
-To see how you can add code snippets, see below:
+This project helped reinforce several core front-end skills:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+1. **HTML Form Elements**: I implemented accessible and semantic form controls.
+2. **CSS Flexbox**: Used for aligning items and creating a responsive layout.
+3. **JavaScript Form Validation**:
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+   - Implemented basic email validation using a regular expression pattern:
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+   ```js
+   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+   if (emailPattern.test(email)) {
+     // Valid email logic
+   }
+   ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+4. **Modal Implementation**: Used JavaScript to show and hide the success message modal dynamically.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+### Continued Development
 
-### Continued development
+Moving forward, I aim to:
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- Implement server-side validation to enhance form security.
+- Experiment with more advanced CSS layout techniques like Grid for more complex designs.
+- Explore adding animations or transitions for a smoother user experience.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+### Useful Resources
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN Web Docs - Form Validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) - Helped me understand the various form validation techniques available in HTML and JavaScript.
+- [CSS Tricks - A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - A great resource for understanding how Flexbox works.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- **GitHub** - [Mayen007](https://github.com/Mayen007)
+- **Frontend Mentor** - [@Mayen007](https://www.frontendmentor.io/profile/Mayen007)

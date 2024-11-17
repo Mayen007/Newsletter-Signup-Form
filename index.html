@@ -27,10 +27,10 @@
       <!-- Newsletter sign-up form -->
       <form>
         <label for="email">Email Address
-          <p class="hidden"></p>
-          <!-- Email input field -->
-          <input type="email" id="email" name="email" placeholder="email@company.com" class="email-input" required pattern="">
+          <p class="hidden" id="error-message">Valid email required</p>
         </label>
+        <!-- Email input field -->
+        <input type="email" id="email" name="email" placeholder="email@company.com" class="email-input" required>
         <!-- Submit button -->
         <button type="button" class="subscribe-btn" id="subscribe">Subscribe to monthly newsletter</button>
       </form>
@@ -41,10 +41,26 @@
     <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Mobile Illustration" class="mobile-graphic"
       loading="lazy">
   </main>
-
+  <!-- Modal -->
+  <div class="modal" id="exampleModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div>
+          <img src="./assets/images/icon-success.svg" alt="Success Icon" class="success-icon">
+          <h3 class="success-title">Thanks for subscribing!</h3>
+          <p class="success-description">A confirmation email has been sent to <span class="bold"></span>.
+            Please open it and click the button inside to confirm your subscription.</p>
+        </div>
+        <button type="button" class="subscribe-btn" id="dismiss">Dismiss Message</button>
+      </div>
+    </div>
+  </div>
+  <!-- Attribution -->
   <div class="attribution">
     <!-- Attribution links -->
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
+    Challenge by <a
+      href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv"
+      target="_blank" rel="noopener">Frontend
       Mentor</a>.
     Coded by <a href="https://github.com/Mayen007" target="_blank" rel="noopener">Mayen007</a>.
   </div>
