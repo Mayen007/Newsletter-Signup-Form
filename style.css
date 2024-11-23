@@ -47,7 +47,7 @@ body {
   gap: 1rem;
   background-color: var(--white);
   color: var(--dark-slate-grey);
-  width: 600px;
+  width: 700px;
   max-width: 60rem;
   position: absolute;
   top: 50%;
@@ -246,7 +246,6 @@ form {
   }
 }
 
-/* Hidden class for elements that should not be displayed */
 .hidden {
   display: none;
 }
